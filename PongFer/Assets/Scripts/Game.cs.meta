@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - ball: {fileID: 6667066199412987569, guid: 804a0c71c8467b04a98ed9c3c2cd489e, type: 3}
+  - ball: {fileID: -6148624973528506245, guid: 10b21269f48c8f04aa4fd24bc8c73c79, type: 3}
   - palet: {fileID: 3932732737108959483, guid: 29a0e9a24cf663c418c4e5f7f63aa23b, type: 3}
-  - palet1: {fileID: 7892499422123518440, guid: f025e7637c0de3f46bbcf18e1a3fff47,
+  - palet1: {fileID: 1719099928469826537, guid: f025e7637c0de3f46bbcf18e1a3fff47,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
