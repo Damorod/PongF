@@ -20,10 +20,23 @@ public class Paleta1PC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 target = new Vector2(transform.position.x, bal.getPos().y);
 
-       // transform.position = new Vector2(transform.position.x, bal.getPos().y - bal.height / 2);
-        transform.position = Vector2.MoveTowards(transform.position, target, 5 * Time.deltaTime);
+
+        Vector2 target = new Vector2(transform.position.x, bal.getPos().y);
+       if(bal.getPos().x > -7 && bal.getPos().x < -3)
+       {
+            transform.position = Vector2.MoveTowards(transform.position, target, 5 * Time.deltaTime);
+       }
+       else if(bal.getPos().x < 9 && bal.getPos().x > 2)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target, 5 * Time.deltaTime);
+
+        }
+        else if (bal.getPos().x < 0 && bal.getPos().x > -2)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target, 5 * Time.deltaTime);
+
+        }
 
 
     }
