@@ -7,8 +7,8 @@ public class Ball : MonoBehaviour
 
     float speed = 5;
 
-    float height;
-    Vector2 direcction;
+    public float height;
+    public Vector2 direcction;
 
     // Start is called before the first frame update
     void Start()
@@ -25,17 +25,20 @@ public class Ball : MonoBehaviour
         if (transform.position.y < Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).y + height / 2 && direcction.y < 0)
         {
             direcction.y = -direcction.y;
+            Sounds.Play("GOLPE_PARED");
             speed += 0.5f;
         }
         if (transform.position.y > Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)).y - height / 2 && direcction.y > 0)
         {
             direcction.y = -direcction.y;
+            Sounds.Play("GOLPE_PARED");
             speed += 0.5f;
 
         }
 
         if (transform.position.x < Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).x + height / 2 && direcction.x < 0)
         {
+            Sounds.Play("PUNTO");
             transform.position = new Vector2(0,0);
             direcction = new Vector2(Random.Range(0, 2) * 2 - 1, 1).normalized;
             ScoreIzq.scoreDer++;
@@ -43,6 +46,7 @@ public class Ball : MonoBehaviour
         }
         if (transform.position.x > Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height)).x - height / 2 && direcction.x > 0)
         {
+            Sounds.Play("PUNTO");
             transform.position = new Vector2(0, 0);
             direcction = new Vector2(Random.Range(0, 2) * 2 - 1, -1).normalized;
             ScoreIzq.scoreIzq++;
@@ -60,10 +64,12 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Palet"))
         {
+            Sounds.Play("GOLPE_PALETA");
             direcction.x = -direcction.x;
         }
         else if(collision.gameObject.CompareTag("Palet1"))
         {
+            Sounds.Play("GOLPE_PALETA");
             direcction.x = -direcction.x;
         }
     }

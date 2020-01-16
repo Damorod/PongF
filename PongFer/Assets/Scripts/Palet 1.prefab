@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8268813600938377788}
   - component: {fileID: -8985904618518321980}
   - component: {fileID: 1719099928469826537}
+  - component: {fileID: 8272103196624764702}
   m_Layer: 0
   m_Name: Palet 1
   m_TagString: Palet1
@@ -142,3 +143,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5436bc196da4e45acea2e2572ef03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8272103196624764702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009284677944806565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e8a9e78e394dc4c96df0421c22fac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 0}
+  bal: {fileID: 0}
+  height: 0

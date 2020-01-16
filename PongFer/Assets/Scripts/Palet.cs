@@ -45,22 +45,22 @@ public class Palet : MonoBehaviour
         currentY += nextMovement.y;
     }
 
-    public bool HandleInput()
-    {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            nextMovement = new Vector2Int(0, 1);
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            nextMovement = new Vector2Int(0, -1);
-        }
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            return false;
-        }
-        return true;
-    }
+    //public bool HandleInput()
+    //{
+    //    if (Input.GetKey(KeyCode.UpArrow))
+    //    {
+    //        nextMovement = new Vector2Int(0, 1);
+    //    }
+    //    else if (Input.GetKey(KeyCode.DownArrow))
+    //    {
+    //        nextMovement = new Vector2Int(0, -1);
+    //    }
+    //    if (Input.GetKey(KeyCode.Escape))
+    //    {
+    //        return false;
+    //    }
+    //    return true;
+    //}
 
     public Vector2 getPos()
     {
