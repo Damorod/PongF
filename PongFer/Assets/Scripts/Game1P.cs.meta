@@ -3,7 +3,12 @@ guid: 72abba8608df7714aaa2cf7d90a28ab5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - paletDer: {instanceID: 0}
+  - ball: {fileID: -6148624973528506245, guid: 10b21269f48c8f04aa4fd24bc8c73c79, type: 3}
+  - palet: {fileID: 2105016575202804985, guid: f8efdf17c83a956468f4f2bf9b2336c6, type: 3}
+  - palet1: {fileID: 4443733045756858570, guid: f6799619bda965749b0f0135bb64af9e,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
